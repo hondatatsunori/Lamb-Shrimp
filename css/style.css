@@ -113,13 +113,11 @@ a {
 /*         header         */
 /*------------------------*/
 
-
-
 .header-log {
-  font-size: 36px;
-  text-align: center;
-  justify-content: center;
-  padding: 15px;
+    font-size: 36px;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
 }
 
 .header-wrap {
@@ -131,5 +129,37 @@ a {
     display: flex;
 }
 
+.header-nav-list a {
+    color: #fff;
+}
 
+.header-nav-item-first {
+    position: absolute;
+    top: 11.5%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
 
+.header-nav-item-second {
+    position: absolute;
+    top: 11.5%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+}
+
+.firstview-left {
+    height: 863px;
+    width: 50%;
+    background: url(../img/picture2.jfif) no-repeat;
+    position: absolute;
+    top: 96px;
+    left: 10%;
+}
+
+.firstview-right {
+    height: 863px;
+    width: 50%;
+    background: url(../img/picture1.jfif) no-repeat;
+    position: absolute;
+    right: 10%;
+}
