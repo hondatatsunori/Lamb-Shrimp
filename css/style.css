@@ -148,29 +148,12 @@ a {
     transform: translate(-50%,-50%);
 }
 
+
+
+
+
 .firstview {
     display: flex;
-    position: relative;
-}
-
-.firstview-left {
-    height: 80%;
-    width: 50%;
-    background: url(../img/picture2.jpg) no-repeat;
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%,-50%);
-}
-
-.firstview-right {
-    height: 80%;
-    width: 50%;
-    background: url(../img/picture1.jpg) no-repeat;
-    position: absolute;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%,-50%);
 }
 
 .common-btn {
@@ -178,6 +161,82 @@ a {
     width: 203px;
     height: 71px;
     line-height: 71px;
-    background: #ffffff;
-    padding: 0px 45px;
+    background: #fff;
+}
+
+.firstview-left {
+    height: 863px;
+    width: 50%;
+    background: url(../img/picture2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.left-btn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.firstview-right {
+    height: 863px;
+    width: 50%;
+    background: url(../img/picture1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.right-btn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.secondview {
+    display: flex;
+}
+
+.secondview-left {
+    width: 50%;
+    height: 457px;
+}
+
+.secondview-left-wrap {
+    padding-top: 228px;
+}
+
+.secondview-left-ttl {
+    font-size: 30px;
+}
+
+.secondview-left-txt {
+    font-size: 18px;
+}
+
+.secondview-right {
+    width: 50%;
+    height: 457px;
+    background: url(../img/picrture3.jpg) no-repeat center/cover;
+}
+
+
+
+
+
+
+
+
+.footer {
+    height: 93px;
+    background: #fff;
+}
+
+.footer a {
+    display: block;
+    font-size: 24px;
+    align-items: center;
 }
