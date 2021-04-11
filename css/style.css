@@ -156,7 +156,7 @@ a {
 .firstview-left {
     height: 80%;
     width: 50%;
-    background: url(../img/picture2.jfif) no-repeat;
+    background: url(../img/picture2.jpg) no-repeat;
     position: absolute;
     top: 50%;
     left: 25%;
@@ -166,10 +166,18 @@ a {
 .firstview-right {
     height: 80%;
     width: 50%;
-    background: url(../img/picture1.jfif) no-repeat;
+    background: url(../img/picture1.jpg) no-repeat;
     position: absolute;
     top: 50%;
     left: 75%;
     transform: translate(-50%,-50%);
 }
 
+.common-btn {
+    display: block;
+    width: 203px;
+    height: 71px;
+    line-height: 71px;
+    background: #ffffff;
+    padding: 0px 45px;
+}
