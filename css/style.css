@@ -123,6 +123,7 @@ a {
 .header-wrap {
     background: #FF9900;
     height: 30px;
+    position: relative;
 }
 
 .header-nav-list {
@@ -135,31 +136,40 @@ a {
 
 .header-nav-item-first {
     position: absolute;
-    top: 11.5%;
+    top: 50%;
     left: 30%;
     transform: translate(-50%,-50%);
 }
 
 .header-nav-item-second {
     position: absolute;
-    top: 11.5%;
+    top: 50%;
     left: 70%;
     transform: translate(-50%,-50%);
 }
 
+.firstview {
+    display: flex;
+    position: relative;
+}
+
 .firstview-left {
-    height: 863px;
+    height: 80%;
     width: 50%;
     background: url(../img/picture2.jfif) no-repeat;
     position: absolute;
-    top: 96px;
-    left: 10%;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
 }
 
 .firstview-right {
-    height: 863px;
+    height: 80%;
     width: 50%;
     background: url(../img/picture1.jfif) no-repeat;
     position: absolute;
-    right: 10%;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%);
 }
+
