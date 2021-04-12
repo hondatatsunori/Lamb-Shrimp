@@ -107,7 +107,15 @@ a {
     text-decoration: none;
 }
 
-
+.common-btn {
+    display: block;
+    width: 203px;
+    height: 71px;
+    line-height: 71px;
+    background: #fff;
+    text-align: center;
+    font-family: PT Serif;
+}
 
 /*------------------------*/
 /*         header         */
@@ -115,12 +123,14 @@ a {
 
 .header-log {
     font-size: 36px;
+    font-family: Monotype Corsiva;
     text-align: center;
     justify-content: center;
     padding: 15px;
 }
 
 .header-wrap {
+    font-family: Monotype Corsiva;
     background: #FF9900;
     height: 30px;
     position: relative;
@@ -148,28 +158,18 @@ a {
     transform: translate(-50%,-50%);
 }
 
-
-
-
+/*------------------------*/
+/*        firstview       */
+/*------------------------*/
 
 .firstview {
     display: flex;
 }
 
-.common-btn {
-    display: block;
-    width: 203px;
-    height: 71px;
-    line-height: 71px;
-    background: #fff;
-}
-
 .firstview-left {
     height: 863px;
     width: 50%;
-    background: url(../img/picture2.jpg) no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url(../img/picture2.jpg) no-repeat center/cover;
     position: relative;
 }
 
@@ -183,9 +183,7 @@ a {
 .firstview-right {
     height: 863px;
     width: 50%;
-    background: url(../img/picture1.jpg) no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url(../img/picture1.jpg) no-repeat center/cover;
     position: relative;
 }
 
@@ -195,6 +193,10 @@ a {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+/*------------------------*/
+/*       secondview       */
+/*------------------------*/
 
 .secondview {
     display: flex;
@@ -211,10 +213,17 @@ a {
 
 .secondview-left-ttl {
     font-size: 30px;
+    font-family: Orienta;
+    text-align: center;
 }
 
 .secondview-left-txt {
     font-size: 18px;
+    font-family: Noto Sans TC;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 40px;
 }
 
 .secondview-right {
@@ -223,20 +232,230 @@ a {
     background: url(../img/picrture3.jpg) no-repeat center/cover;
 }
 
+/*------------------------*/
+/*         space          */
+/*------------------------*/
+.space {
+    height: 424px;
+    position: relative;
+}
 
+.space-btn {
+    display: block;
+    background: #000;
+    color: #fff;
+    width: 138px;
+    height: 51px;
+    line-height: 51px;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
+/*------------------------*/
+/*        accessory       */
+/*------------------------*/
 
+.accessory {
+    display: flex;
+}
 
+.glasses {
+    height: 842px;
+    width: 50%;
+    background: url(../img/picture4.jpg) no-repeat center/cover;
+    position: relative;
+}
 
+.glasses-btn {
+    width: 125px;
+    height: 46px;
+    line-height: 46px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
+.necklace {
+    height: 842px;
+    width: 50%;
+    background: url(../img/picture5.jpg) no-repeat center/cover;
+    position: relative;
+}
+
+.necklace-btn {
+    width: 125px;
+    height: 46px;
+    line-height: 46px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*------------------------*/
+/*         junior         */
+/*------------------------*/
+
+.junior {
+    height: 878px;
+    width: 100%;
+    background: url(../img/picture6.jpg) no-repeat center/cover;
+    position: relative;
+}
+
+.junior-btn {
+    width: 210px;
+    height: 67px;
+    font-size: 16px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*------------------------*/
+/*        contact         */
+/*------------------------*/
+
+.space-contact {
+    width: 100%;
+    height: 25px;
+}
+
+.contact {
+    width: 100%;
+    height: 830px;
+    background: #f2f2f2;
+}
+
+.contact-ttl {
+    font-size: 40px;
+    text-align: center;
+    padding: 31px 0;
+    margin-bottom: 53px;
+}
+
+.contact-form-item {
+    margin: 0 10%;
+}
+
+.contact-form-item:not(:first-child) {
+    margin-top: 37px;
+}
+
+.contact-form-item-name {
+    font-size: 24px;
+}
+
+.contact-form-item-input {
+    width: 100%;
+    font-size: 24px;
+}
+
+.contact-form-item-textarea {
+    width: 100%;
+    resize: none;
+}
+
+.contact-form-submit {
+    width: 183px;
+    height: 43px;
+    margin: 37px auto 0;
+    border: none;
+    border-radius: 20px;
+    background-color: #c4c4c4;
+    color: #000;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+
+/*------------------------*/
+/*         footer         */
+/*------------------------*/
 
 .footer {
     height: 93px;
     background: #fff;
+    position: relative;
 }
 
 .footer a {
     display: block;
     font-size: 24px;
-    align-items: center;
+    font-family: Monotype Corsiva;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+}
+
+@media screen and (max-width: 768px) {
+    .header-nav-list {
+        display: block;
+    }
+
+    .header-nav-item-first {
+        left: 50%;
+    }
+
+    .header-nav-item-second {
+        display: none;
+    }
+
+    .firstview {
+        display: block;
+    }
+
+    .firstview-left,
+    .firstview-right {
+        width: 100%;
+        height: 650px;
+    }
+
+    .secondview {
+        display: block;
+    }
+
+    .secondview-left,
+    .secondview-right {
+        width: 100%;
+    }
+
+    .space {
+        height: 51px;
+    }
+
+    .space-btn {
+        top: 50%;
+    }
+
+    .accessory {
+        display: block;
+    }
+
+    .glasses,
+    .necklace {
+        width: 100%;
+        height: 650px;
+    }
+
+    .glasses-btn,
+    .necklace-btn {
+        top: 87%;
+    }
+
+    .junior {
+        height: 400px;
+    }
+
+    .footer a {
+        left: 30%;
+    }
+    
 }
