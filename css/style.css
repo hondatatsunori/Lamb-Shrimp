@@ -114,6 +114,7 @@ a {
     line-height: 71px;
     background: #fff;
     text-align: center;
+    font-size: 21px;
     font-family: PT Serif;
 }
 
@@ -200,15 +201,17 @@ a {
 
 .secondview {
     display: flex;
+    position: relative;
 }
 
 .secondview-left {
     width: 50%;
-    height: 457px;
+    height: 863px;
 }
 
 .secondview-left-wrap {
-    padding-top: 228px;
+    margin: 37% 0;
+    position: relative;
 }
 
 .secondview-left-ttl {
@@ -226,33 +229,16 @@ a {
     margin-top: 40px;
 }
 
-.secondview-right {
-    width: 50%;
-    height: 457px;
-    background: url(../img/picrture3.jpg) no-repeat center/cover;
-}
-
-/*------------------------*/
-/*         space          */
-/*------------------------*/
-.space {
-    height: 424px;
-    position: relative;
-}
-
-.space-btn {
-    display: block;
+.secondview-left-btn {
     background: #000;
     color: #fff;
-    width: 138px;
-    height: 51px;
-    line-height: 51px;
-    text-align: center;
-    font-size: 14px;
-    position: absolute;
-    top: 6%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin: 70px auto;
+}
+
+.secondview-right {
+    width: 50%;
+    height: 863px;
+    background: url(../img/picture3.jpg) no-repeat center/cover;
 }
 
 /*------------------------*/
@@ -264,16 +250,13 @@ a {
 }
 
 .glasses {
-    height: 842px;
+    height: 863px;
     width: 50%;
     background: url(../img/picture4.jpg) no-repeat center/cover;
     position: relative;
 }
 
 .glasses-btn {
-    width: 125px;
-    height: 46px;
-    line-height: 46px;
     position: absolute;
     top: 80%;
     left: 50%;
@@ -281,16 +264,13 @@ a {
 }
 
 .necklace {
-    height: 842px;
+    height: 863px;
     width: 50%;
     background: url(../img/picture5.jpg) no-repeat center/cover;
     position: relative;
 }
 
 .necklace-btn {
-    width: 125px;
-    height: 46px;
-    line-height: 46px;
     position: absolute;
     top: 80%;
     left: 50%;
@@ -302,16 +282,15 @@ a {
 /*------------------------*/
 
 .junior {
-    height: 878px;
+    height: 863px;
     width: 100%;
     background: url(../img/picture6.jpg) no-repeat center/cover;
     position: relative;
 }
 
 .junior-btn {
-    width: 210px;
+    width: 320px;
     height: 67px;
-    font-size: 16px;
     position: absolute;
     top: 80%;
     left: 50%;
@@ -324,13 +303,13 @@ a {
 
 .space-contact {
     width: 100%;
-    height: 25px;
+    height: 33px;
 }
 
 .contact {
     width: 100%;
     height: 830px;
-    background: #f2f2f2;
+    background: #f6f6f6;
 }
 
 .contact-ttl {
@@ -363,16 +342,9 @@ a {
 }
 
 .contact-form-submit {
-    width: 183px;
-    height: 43px;
     margin: 37px auto 0;
     border: none;
-    border-radius: 20px;
-    background-color: #c4c4c4;
-    color: #000;
     cursor: pointer;
-    display: block;
-    text-align: center;
 }
 
 /*------------------------*/
@@ -382,18 +354,37 @@ a {
 .footer {
     height: 93px;
     background: #fff;
-    position: relative;
 }
 
-.footer a {
-    display: block;
-    font-size: 24px;
-    font-family: Monotype Corsiva;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%,-50%);
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.footer-logo {
+    margin-left: 190px;
+    font-size: 25px;
+    font-family: Monotype Corsiva;
+}
+
+.footer-nav-list {
+    display: flex;
+    font-size: 15px;
+    margin-right: 190px;
+}
+
+.footer-nav-item:after {
+    content: "|";
+    display: inline-block;
+    padding: 0 10px;
+}
+
+li:last-child::after {
+    content: none;
+}
+
+
 
 @media screen and (max-width: 768px) {
     .header-nav-list {
