@@ -454,6 +454,10 @@ li:last-child::after {
         height: 650px;
         background: url(../img/picture7.jpg) no-repeat center/cover;
     }
+
+    .junior-btn {
+        width: 280px;
+    }
     
     .contact {
         height: 650px;
