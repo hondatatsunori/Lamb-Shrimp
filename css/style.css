@@ -217,6 +217,7 @@ a {
 }
 
 .secondview-left-wrap {
+    width: 400px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -227,6 +228,7 @@ a {
     font-size: 30px;
     font-family: Orienta;
     text-align: center;
+    line-height: 1.5;
 }
 
 .secondview-left-txt {
@@ -234,7 +236,7 @@ a {
     font-family: PT Serif;
     justify-content: center;
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.5;
     margin-top: 40px;
 }
 
@@ -361,16 +363,14 @@ a {
 /*------------------------*/
 
 .footer {
-    height: 93px;
     background: #fff;
 }
 
 .footer-inner {
+    height: 90px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 25px;
-    line-height: 25px;
     align-items: center;
 }
 
@@ -380,9 +380,10 @@ a {
     font-family: Monotype Corsiva;
 }
 
+
 .footer-nav-list {
     display: flex;
-    font-size: 15px;
+    font-size: 10px;
     margin-right: 190px;
 }
 
@@ -402,65 +403,75 @@ li:last-child::after {
     .header-nav-list {
         display: block;
     }
-
+    
     .header-nav-item-first {
         left: 50%;
     }
-
+    
     .header-nav-item-second {
         display: none;
     }
-
+    
     .firstview {
         display: block;
     }
-
+    
     .firstview-left,
     .firstview-right {
         width: 100%;
         height: 650px;
     }
-
+    
     .secondview {
         display: block;
     }
-
+    
     .secondview-left,
     .secondview-right {
         height: 650px;
     }
-
+    
     .secondview-left,
     .secondview-right {
         width: 100%;
     }
-
+    
+    .secondview-left-wrap {
+        width: 300px;
+    }
+    
     .accessory {
         display: block;
     }
-
+    
     .glasses,
     .necklace {
         width: 100%;
         height: 650px;
     }
-
+    
     .junior {
         height: 400px;
     }
-
+    
     .footer-logo {
-        margin: 0;
-        display: block;
+        margin: 0 auto;
     }
     
     .footer-inner {
-        justify-content: center;
+        height: 100px;
+    }
+    
+    .footer-nav {
+        margin: 0 auto;
     }
 
     .footer-nav-list {
-        display: block;
         margin: 0;
+    }
+
+    .footer-nav-item {
+        line-height: 2.5;
     }
 
 }
