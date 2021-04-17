@@ -451,9 +451,27 @@ li:last-child::after {
     }
     
     .junior {
-        height: 400px;
+        height: 650px;
+        background: url(../img/picture7.jpg) no-repeat center/cover;
     }
     
+    .contact {
+        height: 650px;
+    }
+
+    .contact-ttl {
+        margin: 0;
+        padding: 28px;
+    }
+
+    .contact-form-item:not(:first-child) {
+        margin-top: 28px;
+    }
+
+    .contact-form-submit {
+        margin: 28px auto;
+    }
+
     .footer-logo {
         margin: 0 auto;
     }
